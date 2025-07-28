@@ -1,73 +1,92 @@
-🚀 Plume Push TX Bot
-Bot ini secara otomatis mengirimkan token PLUME ke semua wallet aktif (EOA) yang bertransaksi di blok terbaru Plume Network.
-✅ Cocok untuk airdrop, marketing, dan distribusi token massal
-✅ Gratis dan open-source
-✅ Aman dari kegagalan (skip kontrak, hanya kirim ke wallet)
-✅ Jalan nonstop 24/7
+🚀 Plume Push TX Bot – Auto Airdrop Sambil Rebahan
+Sistem Requirements
+2 core CPU
+
+4GB RAM
+
+Python 3.9+
 
 ✨ Fitur
-🔄 Loop otomatis membaca blok terbaru
+Kirim otomatis token PLUME ke semua wallet aktif (EOA)
 
-🛡️ Filter kontrak → hanya wallet manusia (EOA)
+Skip kontrak → hanya wallet manusia
 
-⏱️ Delay random untuk anti-spam
+Delay random → anti-spam
 
-📦 Kirim ke semua penerima unik di blok terbaru
+Log TX Hash setiap transaksi
 
-📜 Log transaksi TX Hash
+Jalan nonstop 24/7
 
-⚡ Instalasi
-1️⃣ Clone repository
+Gratis & open-source
+
+Buat screen
+
+sql
+Copy
+Edit
+sudo apt update && sudo apt install screen -y
+nginx
+Copy
+Edit
+screen -S plume-bot
+Clone Repository
+
 bash
 Copy
 Edit
-git clone https://github.com/kevinnft/plume-push-tx.git
+git clone https://github.com/kevinnft/plume-push-tx
 cd plume-push-tx
-2️⃣ Install dependencies
+Buat environment
+
 bash
+Copy
+Edit
+python3 -m venv venv
+source venv/bin/activate
+Install bahan
+
+nginx
 Copy
 Edit
 pip install web3 eth_account
-3️⃣ Edit private key
-Buka file bot.py dan ganti:
+Edit script
 
-python
+nginx
 Copy
 Edit
-SENDER_PRIVATE_KEY = "0xPRIVATE_KEY_KAMU"
-▶️ Cara Menjalankan
-bash
+nano bot.py
+Ganti SENDER_PRIVATE_KEY dengan private key wallet kamu
+
+Klik ctrl + x → y → enter (untuk simpan & keluar)
+
+Mainkan bot
+
+nginx
 Copy
 Edit
 python bot.py
-Bot akan:
+🔑 Fungsi tambahan
+Masuk screen bot
 
-Memantau blok terbaru
-
-Mengirim PLUME otomatis ke semua wallet yang aktif transaksi
-
-Skip kontrak dan alamat sendiri
-
-Menampilkan TX Hash setiap pengiriman
-
-📄 Contoh Output
-yaml
+nginx
 Copy
 Edit
-📦 Blok terbaru: 15804728 | Jumlah TX: 6
-✅ [1] Kirim 0.00000336 PLUME ke 0xC8...BC78 | TX: 0xbb...2d69
-✅ [2] Kirim 0.00000183 PLUME ke 0x0F...C7e7 | TX: 0x82...d03d
-...
-💡 Tips
-Pastikan wallet punya cukup gas PLUME
+screen -r plume-bot
+Keluar screen bot
 
-Gunakan VPS agar bot jalan nonstop
+css
+Copy
+Edit
+ctrl + a + d
+DISCLAIMER
+Gunakan dengan bijak, semua risiko dan tanggung jawab ada di tangan pengguna.
 
-Bisa diintegrasikan dengan campaign airdrop atau token distribution
+☕ Donate for Coffee
+EVM Address
+0x7C8c8eF20a48901372775618330B294ab937C934
 
-🤝 Kontribusi
-Pull request dan ide baru sangat diterima!
+SOL Address
+GvvSje68JxGQ1suRguLcTq27TwNUzTomed3mEtt1s1KE
 
-📜 Lisensi
-MIT License – Bebas digunakan & dimodifikasi.
+© 2025 Plume Push TX Bot. All rights reserved.
 
