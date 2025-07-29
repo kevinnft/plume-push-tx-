@@ -2,7 +2,7 @@
 **Install Script**
 ```
 git clone https://github.com/kevinnft/plume-push-tx-
-cd discord-plume-push-tx-
+cd plume-push-tx-
 ```
 Buat environtment
 ```
