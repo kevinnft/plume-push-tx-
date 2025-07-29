@@ -3,6 +3,7 @@
 ```
 git clone https://github.com/kevinnft/plume-push-tx-
 cd discord-plume-push-tx-
+```
 Buat environtment
 ```
 python3 -m venv dc
@@ -12,18 +13,13 @@ source dc/bin/activate
 ```
 pip3 install -r requirements.txt
 ```
+Ganti private key 
+```
+nano bot.py
+```
 **Mainkan script**
 ```
 python3 bot.py
-```
-## Fungsi tambahan
-masuk screen AI
-```
-screen -r AI
-```
-masuk screen discord
-```
-screen -r discord
 ```
 ## DISCLAIMER
 Gunakan dengan bijak, semua risiko dan tanggung jawab ada di tangan pengguna.
